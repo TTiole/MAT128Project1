@@ -20,13 +20,13 @@ Files: main.m, InverseIteration.m, Julia.m
 
 
 ### Part iv
-Done by Emily
+Done by Yanqin
 
-Files: part 4.m
+Files: part4.m
 
 
 ### Part v
-Done by Emily
+Done by Yanqin
 
 Files: part5.m
 
