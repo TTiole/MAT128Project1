@@ -5,9 +5,11 @@ result = connected (ar, br, ai, bi, step);
 function result = connected (ar, br, ai, bi, step)
      element = 0;
      orbit = [];    
-     while ismember(orbit,element) == 0 %calculate orbit of 0
+     i = 1 %safe for loop
+     while ismember(orbit,element) == 0 && i<500 %calculate orbit of 0
          element  = feval(element);
          orbit = [orbit element];
+         i= i+1;
      end
      rlength = (br-ar)/step + 1; %find out points in Julia set
      ilength = (bi-ai)/step + 1;
