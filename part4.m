@@ -1,5 +1,6 @@
-image = imread("1.png");
+image = imread("fig-i-a.png");
 dim = cal_dimension(image);
+disp(dim)
 
 function dim = cal_dimension(image)
      figure = double(image);
