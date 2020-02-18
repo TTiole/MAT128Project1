@@ -26,7 +26,7 @@ function result = connected (phi, ar, br, ai, bi, step,c)
         end
         j = j+1;
     end
-    result = 0;
+    result = 0; %the set is connected if result is 0
     for k = 1: length(orbit)
         if ismember(0, orbit(i)) == 0
             result = result+1;
