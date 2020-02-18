@@ -6,7 +6,7 @@ function result = connected (ar, br, ai, bi, step)
      element = 0;
      orbit = [];    
      i = 1 %safe for loop
-     while ismember(orbit,element) == 0 && i<500 %calculate orbit of 0
+     while ismember(orbit,element) == 0 && i<10000 %calculate orbit of 0
          element  = feval(element);
          orbit = [orbit element];
          i= i+1;
