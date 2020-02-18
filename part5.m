@@ -23,7 +23,7 @@ function result = connected (ar, br, ai, bi, step)
         end
         j = j+1;
     end
-    result = 0;
+    result = 0; %connected if result is 0
     for k = 1: length(orbit)
         if ismember(0, orbit(i)) == 0
             result = result+1;
