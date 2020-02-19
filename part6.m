@@ -1,4 +1,6 @@
 phi = inline('z^2-1.25');
+fixpt1 = (1+sqrt(6))/2;
+fixpt2 = (1-sqrt(6))/2; 
 x = linspace(-1.8,1.8,1000);
 y = linspace(-0.7,0.7,1000);
 img = zeros(1000, 1000);
