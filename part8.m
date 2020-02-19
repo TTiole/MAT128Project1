@@ -1,4 +1,6 @@
 phi = inline('zk^2+c');
+fixpt1 = (1+sqrt(6))/2;
+fixpt2 = (1-sqrt(6))/2; 
 x = linspace(-1.5,1.5,1000);
 y = linspace(-0.7,0.7,1000);
 img = zeros(800, 1000);
