@@ -1,4 +1,4 @@
-image = imread("fig-i-a.png");
+image = imread("fig-i-a_transformed.png");
 dim = cal_dimension(image);
 disp(dim)
 
