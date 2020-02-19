@@ -9,14 +9,13 @@ function dim = cal_dimension(image)
      b = 2.^(1:a);
      Nr = zeros(1,a);
      for i = 1:a
-         c = b(i);
-         d = m/c;
+         d = m/b(i);
          for j = 1:d %differential box-counting method
              for k = 1:d
-                 A = figure(c*(j-1)+[1:c],c*(k-1)+[1:c]);
+                 A = figure(b(i)*(j-1)+[1:b(i)],b(i)*(k-1)+[1:b(i)]);
                  minim = min(A(1:end));
                  maxim = max(A(1:end));
-                 nr = fix(maxim/c)-fix(minim/c)+1;
+                 nr = fix(maxim/b(i))-fix(minim/b(i))+1;
                  Nr(i) = Nr(i) + nr;
              end
          end
